@@ -11,7 +11,7 @@ gulp.task('previewDist', function() {
   browserSync.init({
     notify: false,
     server: {
-      baseDir: "dist"
+      baseDir: "docs"
     }
   });
 });
@@ -42,7 +42,7 @@ gulp.task('optimizeImages', ['deleteDistFolder'], function() {
       interlaced: true,
       multipass: true
     }))
-    .pipe(gulp.dest("./doc/assets/images"));
+    .pipe(gulp.dest("./docs/assets/images"));
 });
 
 gulp.task('useminTrigger', ['deleteDistFolder'], function() {
@@ -55,7 +55,7 @@ gulp.task('usemin', ['styles', 'scripts'], function() {
       css: [function() {return rev()}, function() {return cssnano()}],
       js: [function() {return rev()}, function() {return uglify()}]
     }))
-    .pipe(gulp.dest("./doc"));
+    .pipe(gulp.dest("./docs"));
 });
 
 gulp.task('build', ['deleteDistFolder', 'copyGeneralFiles', 'optimizeImages', 'useminTrigger']);

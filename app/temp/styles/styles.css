@@ -904,26 +904,26 @@ a {
   }
 
 .page-section--about.lazyloaded {
-      background: url('/assets/images/AAA/CBL_Background_Vert.jpg') fixed top center no-repeat;
+      background: url('../../assets/images/CBL_Background_Vert.jpg') fixed top center no-repeat;
       background-size: cover;
     }
 
 @media (min-width: 800px) {
 
 .page-section--about.lazyloaded {
-        background-image: url('/assets/images/AAA/CBL_Background_Horiz.jpg')
+        background-image: url('../../assets/images/CBL_Background_Horiz.jpg')
     }
   }
 
 .page-section--albums.lazyloaded {
-      background: url('/assets/images/AAA/CBL_Background_Vert.jpg') fixed top center no-repeat;
+      background: url('../../assets/images/CBL_Background_Vert.jpg') fixed top center no-repeat;
       background-size: cover;
     }
 
 @media (min-width: 800px) {
 
 .page-section--albums.lazyloaded {
-        background-image: url('/assets/images/AAA/CBL_Background_Horiz.jpg')
+        background-image: url('../../assets/images/CBL_Background_Horiz.jpg')
     }
   }
 
@@ -1303,11 +1303,11 @@ a {
 Instead, update the gulp/templates/sprite.css file */
 
 .icon {
-    background-image: url('/assets/images/sprites/sprite-0211f04b.svg');
+    background-image: url('../../assets/images/sprites/sprite-0211f04b.svg');
   }
 
 .no-svg .icon {
-    background-image: url('/assets/images/sprites/sprite-0211f04b.png');
+    background-image: url('../../assets/images/sprites/sprite-0211f04b.png');
   }
 
 .icon--ecg-lines {
